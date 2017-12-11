@@ -21,6 +21,7 @@ def start_training(dataset):
     for i in range(1, len(config.FEATURES)):
         X = dataset[config.FEATURES[i]].values
         y = dataset[config.TARGET].values
+        # score = training.linear_regression(X, y)
         # score = training.KNN(X, y)
         score = training.SVM(X, y)
         if score > temp:
