@@ -1,4 +1,5 @@
-PREFIX = "/Users/zen/Dropbox/Wine Quality Ratings and Chemicals/"
+# PREFIX = "/Users/zen/Dropbox/Wine Quality Ratings and Chemicals/"
+PREFIX = "Wine Quality Ratings and Chemicals/"
 
 WHITE_WINE = PREFIX + "winequality-white.csv"
 RED_WINE = PREFIX + "winequality-red.csv"

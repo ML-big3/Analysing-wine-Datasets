@@ -17,7 +17,7 @@ from sklearn.svm import SVC
 
 def KNN(X, y):
     print("KNN")
-    clf = KNeighborsClassifier(10, weights="uniform")
+    clf = KNeighborsClassifier(8, weights="uniform")
     # Accuracy metric
     return("accuracy ", cross_val_score(clf, X, y, cv=10, scoring="accuracy").mean())
     # f1 score
