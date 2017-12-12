@@ -3,10 +3,14 @@ PREFIX = "Wine Quality Ratings and Chemicals/"
 
 WHITE_WINE = PREFIX + "winequality-white.csv"
 RED_WINE = PREFIX + "winequality-red.csv"
+COMBINE = PREFIX + "combine.csv"
 
 FEATURE = ["fixed acidity", "volatile acidity", "citric acid", "residual sugar",
             "chlorides", "free sulfur dioxide", "total sulfur dioxide", "density",
             "pH", "sulphates", "alcohol"]
+
+# FEATURE = ['alcohol', 'sulphates', 'volatile acidity', 'total sulfur dioxide', 'density', 'chlorides', 'fixed acidity', 'pH', 'free sulfur dioxide']
+FEATURE = ['alcohol', 'total sulfur dioxide', 'sulphates', 'volatile acidity', 'density', 'chlorides', 'citric acid', 'pH', 'fixed acidity', 'free sulfur dioxide', 'residual sugar']
 
 def subs(l):
     if l == []:

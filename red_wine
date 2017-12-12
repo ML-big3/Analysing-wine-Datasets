@@ -1,0 +1,122 @@
+1
+SVM
+('accuracy ', 0.82179462514852974)
+SVM
+('accuracy ', 0.82179462514852974)
+KNN
+('accuracy ', 0.80300113922319949)
+LogisticRegression
+('accuracy ', 0.82368146735854497)
+Decision Tree
+('DecisionT  ', 0.80425138708197164)
+2
+SVM
+('accuracy ', 0.82491210717784169)
+SVM
+('accuracy ', 0.82491210717784169)
+KNN
+('accuracy ', 0.81926317768049672)
+LogisticRegression
+('accuracy ', 0.82303297918579688)
+Decision Tree
+('DecisionT  ', 0.73855739982673374)
+3
+SVM
+('accuracy ', 0.82803700859062457)
+SVM
+('accuracy ', 0.82803700859062457)
+KNN
+('accuracy ', 0.82239215732813931)
+LogisticRegression
+('accuracy ', 0.82865812567589425)
+Decision Tree
+('DecisionT  ', 0.73859690888587903)
+4
+SVM
+('accuracy ', 0.82553700859062429)
+SVM
+('accuracy ', 0.82553700859062429)
+KNN
+('accuracy ', 0.82051715732813923)
+LogisticRegression
+('accuracy ', 0.83303312567589427)
+Decision Tree
+('DecisionT  ', 0.75099455001209015)
+5
+SVM
+('accuracy ', 0.82429482139581189)
+SVM
+('accuracy ', 0.82429482139581189)
+KNN
+('accuracy ', 0.82051715732813923)
+LogisticRegression
+('accuracy ', 0.83178700766347191)
+Decision Tree
+('DecisionT  ', 0.75489501203073106)
+6
+SVM
+('accuracy ', 0.82680666360582722)
+SVM
+('accuracy ', 0.82680666360582722)
+KNN
+('accuracy ', 0.82051715732813923)
+LogisticRegression
+('accuracy ', 0.83304884987348693)
+Decision Tree
+('DecisionT  ', 0.73354197139079313)
+7
+SVM
+('accuracy ', 0.82743166360582721)
+SVM
+('accuracy ', 0.82743166360582721)
+KNN
+('accuracy ', 0.82177487154610973)
+LogisticRegression
+('accuracy ', 0.83178700766347169)
+Decision Tree
+('DecisionT  ', 0.74979260803551961)
+8
+SVM
+('accuracy ', 0.82743166360582721)
+SVM
+('accuracy ', 0.82743166360582721)
+KNN
+('accuracy ', 0.82113812792331198)
+LogisticRegression
+('accuracy ', 0.83181044607903476)
+Decision Tree
+('DecisionT  ', 0.75418387399923159)
+9
+SVM
+('accuracy ', 0.82367375314057456)
+SVM
+('accuracy ', 0.82367375314057456)
+KNN
+('accuracy ', 0.8217751663806091)
+LogisticRegression
+('accuracy ', 0.82929472280859462)
+Decision Tree
+('DecisionT  ', 0.74543313691298263)
+10
+SVM
+('accuracy ', 0.82677511662342429)
+SVM
+('accuracy ', 0.82677511662342429)
+KNN
+('accuracy ', 0.82179467397856221)
+LogisticRegression
+('accuracy ', 0.82929477163862708)
+Decision Tree
+('DecisionT  ', 0.74355455068705711)
+11
+SVM
+('accuracy ', 0.82115385119375206)
+SVM
+('accuracy ', 0.82115385119375206)
+KNN
+('accuracy ', 0.82427904836818688)
+LogisticRegression
+('accuracy ', 0.82988454077023377)
+Decision Tree
+('DecisionT  ', 0.75412033778267651)
+[Finished in 18.3s]
