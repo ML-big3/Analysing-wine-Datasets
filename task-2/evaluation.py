@@ -50,7 +50,16 @@ class EvaluationMetrics:
         cm = {'tp' : make_scorer(tp), 'tn' : make_scorer(tn),
                    'fp' : make_scorer(fp), 'fn' : make_scorer(fn)}
         results = model_selection.cross_validate(self.classifier, self.X, self.y, cv=self.kfold, scoring=cm)
-        print("Classifier "+self.classifier_name+" - Confusion Maxtrix: ", results)
+
+        print("Classifier "+self.classifier_name+" - Confusion Maxtrix (test_tp): ", results['test_tp'])
+        print("Classifier "+self.classifier_name+" - Confusion Maxtrix (test_fp): ", results['test_fp'])
+        print("Classifier "+self.classifier_name+" - Confusion Maxtrix (test_tn): ", results['test_tn'])
+        print("Classifier "+self.classifier_name+" - Confusion Maxtrix (test_fn): ", results['test_fn'])
+        print("Classifier "+self.classifier_name+" - Confusion Maxtrix (train_tp): ", results['train_tp'])
+        print("Classifier "+self.classifier_name+" - Confusion Maxtrix (train_fp): ", results['train_fp'])
+        print("Classifier "+self.classifier_name+" - Confusion Maxtrix (train_tn): ", results['train_tn'])
+        print("Classifier "+self.classifier_name+" - Confusion Maxtrix (train_fn): ", results['train_fn'])
+       
 
     def perform_metrics(self):
         cross_validate_confusion_matrix()
