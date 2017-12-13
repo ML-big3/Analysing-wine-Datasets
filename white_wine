@@ -1,122 +1,111 @@
 1
-SVM
-('accuracy ', 0.75908291231227665)
+['alcohol']
 SVM
 ('accuracy ', 0.75908291231227665)
 KNN
-('accuracy ', 0.75049936884028523)
-LogisticRegression
+('accuracy ', 0.75235193373889742)
+logistic_regression
 ('accuracy ', 0.75991091089891405)
-Decision Tree
-('DecisionT  ', 0.75438360247826353)
+decision_tree
+('accuracy ', 0.75438360247826353)
 2
+['alcohol', 'density']
 SVM
-('accuracy ', 0.74192832191414915)
-SVM
-('accuracy ', 0.74192832191414915)
+('accuracy ', 0.75990382963626135)
 KNN
-('accuracy ', 0.7466280490930145)
-LogisticRegression
-('accuracy ', 0.7601120745175608)
-Decision Tree
-('DecisionT  ', 0.66556738372632174)
+('accuracy ', 0.75254435181542034)
+logistic_regression
+('accuracy ', 0.7594919102672868)
+decision_tree
+('accuracy ', 0.66167521883617564)
 3
+['alcohol', 'density', 'volatile acidity']
 SVM
-('accuracy ', 0.74622279534181946)
-SVM
-('accuracy ', 0.74622279534181946)
+('accuracy ', 0.75806875412191788)
 KNN
-('accuracy ', 0.74805995248048607)
-LogisticRegression
-('accuracy ', 0.75950274083369185)
-Decision Tree
-('DecisionT  ', 0.64963273653019482)
+('accuracy ', 0.75295669702914214)
+logistic_regression
+('accuracy ', 0.7556222632993822)
+decision_tree
+('accuracy ', 0.66231371906027536)
 4
+['alcohol', 'density', 'volatile acidity', 'free sulfur dioxide']
 SVM
-('accuracy ', 0.75030319636007292)
-SVM
-('accuracy ', 0.75030319636007292)
+('accuracy ', 0.75806041572477212)
 KNN
-('accuracy ', 0.74806078547021126)
-LogisticRegression
-('accuracy ', 0.75930032688046789)
-Decision Tree
-('DecisionT  ', 0.65882182528278521)
+('accuracy ', 0.75091378547845611)
+logistic_regression
+('accuracy ', 0.75950357722337514)
+decision_tree
+('accuracy ', 0.67353366906219214)
 5
+['alcohol', 'density', 'volatile acidity', 'free sulfur dioxide', 'total sulfur dioxide']
 SVM
-('accuracy ', 0.749489784443509)
-SVM
-('accuracy ', 0.749489784443509)
+('accuracy ', 0.73252888285622997)
 KNN
-('accuracy ', 0.74806078547021126)
-LogisticRegression
-('accuracy ', 0.75827616601349224)
-Decision Tree
-('DecisionT  ', 0.66473564433582699)
+('accuracy ', 0.74274507938944567)
+logistic_regression
+('accuracy ', 0.75786674901365103)
+decision_tree
+('accuracy ', 0.67841081540259207)
 6
+['alcohol', 'density', 'volatile acidity', 'free sulfur dioxide', 'total sulfur dioxide', 'residual sugar']
 SVM
-('accuracy ', 0.75214743816135032)
-SVM
-('accuracy ', 0.75214743816135032)
+('accuracy ', 0.73233730626932714)
 KNN
-('accuracy ', 0.74826403581311818)
-LogisticRegression
-('accuracy ', 0.75847941295644117)
-Decision Tree
-('DecisionT  ', 0.67414842652915874)
+('accuracy ', 0.73804660594511573)
+logistic_regression
+('accuracy ', 0.75970182622797355)
+decision_tree
+('accuracy ', 0.69108808432847979)
 7
+['alcohol', 'density', 'volatile acidity', 'free sulfur dioxide', 'total sulfur dioxide', 'residual sugar', 'chlorides']
 SVM
-('accuracy ', 0.75194002286981787)
-SVM
-('accuracy ', 0.75194002286981787)
+('accuracy ', 0.73355971784088037)
 KNN
-('accuracy ', 0.74745103614146924)
-LogisticRegression
-('accuracy ', 0.76276722586626899)
-Decision Tree
-('DecisionT  ', 0.66845204244405643)
+('accuracy ', 0.73804660594511573)
+logistic_regression
+('accuracy ', 0.76051982213799396)
+decision_tree
+('accuracy ', 0.68370864025392242)
 8
+['alcohol', 'density', 'volatile acidity', 'free sulfur dioxide', 'total sulfur dioxide', 'residual sugar', 'chlorides', 'pH']
 SVM
-('accuracy ', 0.75152852594563258)
-SVM
-('accuracy ', 0.75152852594563258)
+('accuracy ', 0.73254221919172635)
 KNN
-('accuracy ', 0.7452048827477713)
-LogisticRegression
-('accuracy ', 0.7619533949048739)
-Decision Tree
-('DecisionT  ', 0.66986811902675192)
+('accuracy ', 0.73743352635745241)
+logistic_regression
+('accuracy ', 0.76031615785019302)
+decision_tree
+('accuracy ', 0.67718801028589304)
 9
+['alcohol', 'density', 'volatile acidity', 'free sulfur dioxide', 'total sulfur dioxide', 'residual sugar', 'chlorides', 'pH', 'citric acid']
 SVM
-('accuracy ', 0.75521117692013262)
-SVM
-('accuracy ', 0.75521117692013262)
+('accuracy ', 0.73417653993238008)
 KNN
-('accuracy ', 0.73784251751254648)
-LogisticRegression
-('accuracy ', 0.75827532962380906)
-Decision Tree
-('DecisionT  ', 0.67110551591346124)
+('accuracy ', 0.73743352635745241)
+logistic_regression
+('accuracy ', 0.76051732146883966)
+decision_tree
+('accuracy ', 0.68108805372885717)
 10
+['alcohol', 'density', 'volatile acidity', 'free sulfur dioxide', 'total sulfur dioxide', 'residual sugar', 'chlorides', 'pH', 'citric acid', 'sulphates']
 SVM
-('accuracy ', 0.73334312436256099)
-SVM
-('accuracy ', 0.73334312436256099)
+('accuracy ', 0.73376628994281357)
 KNN
-('accuracy ', 0.7339612052885327)
-LogisticRegression
-('accuracy ', 0.76092673676870193)
-Decision Tree
-('DecisionT  ', 0.67435376019636806)
+('accuracy ', 0.73743352635745241)
+logistic_regression
+('accuracy ', 0.7621487292954241)
+decision_tree
+('accuracy ', 0.67517425167560552)
 11
-SVM
-('accuracy ', 0.73335354438403)
+['alcohol', 'density', 'volatile acidity', 'free sulfur dioxide', 'total sulfur dioxide', 'residual sugar', 'chlorides', 'pH', 'citric acid', 'sulphates', 'fixed acidity']
 SVM
 ('accuracy ', 0.73335354438403)
 KNN
-('accuracy ', 0.73171630902932816)
-LogisticRegression
-('accuracy ', 0.76112915242190493)
-Decision Tree
-('DecisionT  ', 0.67782857343454661)
-[Finished in 165.7s]
+('accuracy ', 0.73967718248195413)
+logistic_regression
+('accuracy ', 0.76153815037691519)
+decision_tree
+('accuracy ', 0.67680941900581648)
+[Finished in 103.9s]

@@ -1,4 +1,4 @@
-# from sklearn.linear_model import LinearRegression
+import evaluation
 from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import cross_val_score
@@ -19,32 +19,39 @@ def feature_selection(X, y):
     rf = RandomForestClassifier()
     rf.fit(X, y)
     print("Features sorted by their score:")
-    print(sorted(zip(map(lambda x: round(x, 4), rf.feature_importances_), config.FEATURE),
-             reverse=True))
+    print(sorted(zip(map(lambda x: round(x, 4), rf.feature_importances_), config.FEATURE), reverse=True))
 
 def KNN(X, y):
     print("KNN")
-    clf = KNeighborsClassifier(16, weights="uniform")
-    print("accuracy ", cross_val_score(clf, X, y, cv=10, scoring="accuracy").mean())
+    clf = KNeighborsClassifier(26, weights="uniform")
+    # print("accuracy ", cross_val_score(clf, X, y, cv=10, scoring="accuracy").mean())
+    get_mtrics(clf, X, y, "KNN")
 
 
 def SVM(X, y):
     print("SVM")
-    # X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
     clf = SVC()
-    # clf.fit(X_train, y_train)
-    print("accuracy ", cross_val_score(clf, X, y, cv=10, scoring="accuracy").mean())
-    # print("accuracy", clf.score(X_test, y_test))
+    get_mtrics(clf, X, y, "SVM")
+    # print("accuracy ", cross_val_score(clf, X, y, cv=10, scoring="accuracy").mean())
 
 
 def decision_tree(X, y):
-    print("Decision Tree")
+    print("decision_tree")
     clf = DecisionTreeClassifier()
-    print("DecisionT  ", cross_val_score(clf, X, y, cv=10).mean())
+    get_mtrics(clf, X, y, "decision_tree")
+    # print("accuracy ", cross_val_score(clf, X, y, cv=10, scoring="accuracy").mean())
 
 
 def logistic_regression(X, y):
-    print("LogisticRegression")
+    print("logistic_regression")
     clf = LogisticRegression()
-    print("accuracy ", cross_val_score(clf, X, y, cv=10, scoring="accuracy").mean())
-    cross_val_score(clf, X, y, cv=10, scoring="accuracy").mean()
+    get_mtrics(clf, X, y, "logistic_regression")
+    # print("accuracy ", cross_val_score(clf, X, y, cv=10, scoring="accuracy").mean())
+
+
+def get_mtrics(clf, X, y, name):
+    metrics = evaluation.EvaluationMetrics(clf, X, y, name)
+    metrics.cross_validate_confusion_matrix()
+    metrics.cross_validate_precision_score()
+    metrics.cross_validate_auc_roc()
+    metrics.cross_validate_for_accuracy()

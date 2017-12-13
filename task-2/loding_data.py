@@ -16,12 +16,6 @@ def train_red_wine_dataset():
     start_training(red_wine_dataset)
 
 
-def training_combine():
-    print("Start loading combine dataset")
-    combine_dataset = pd.read_csv(config.COMBINE, sep=';')
-    start_training(combine_dataset)
-
-
 def data_processing(y):
     k=[]
     for i in y:
@@ -35,14 +29,14 @@ def data_processing(y):
 
 def feature_selection():
     i = 1
-    dataset = pd.read_csv(config.WHITE_WINE, sep=';')
+    dataset = pd.read_csv(config.RED_WINE, sep=';')
     while(i<=11):
-        features = config.FEATURE[:i]
+        features = config.RED_FEATURES[:i]
         print(i)
+        print(features)
         X = dataset[features].values
         y = dataset[config.TARGET].values
         y = data_processing(y)
-        training.SVM(X, y)
         training.SVM(X, y)
         training.KNN(X, y)
         training.logistic_regression(X, y)
@@ -51,7 +45,7 @@ def feature_selection():
 
 
 def g_features():
-    dataset = pd.read_csv(config.RED_WINE, sep=';')
+    dataset = pd.read_csv(config.WHITE_WINE, sep=';')
     X = dataset[config.FEATURE].values
     y = dataset[config.TARGET].values
     training.feature_selection(X, y)
@@ -62,12 +56,10 @@ def start_training(dataset):
     y = dataset[config.TARGET].values
     y = data_processing(y)
     training.SVM(X, y)
-    training.KNN(X, y)
     training.logistic_regression(X, y)
-    training.decision_tree(X, y)
 
 
-feature_selection()
-# train_red_wine_dataset()
-# train_white_wine_dataset()
-# training_combine()
+# g_features()
+# feature_selection()
+train_red_wine_dataset()
+train_white_wine_dataset()

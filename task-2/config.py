@@ -9,24 +9,6 @@ FEATURE = ["fixed acidity", "volatile acidity", "citric acid", "residual sugar",
             "chlorides", "free sulfur dioxide", "total sulfur dioxide", "density",
             "pH", "sulphates", "alcohol"]
 
-# FEATURE = ['alcohol', 'sulphates', 'volatile acidity', 'total sulfur dioxide', 'density', 'chlorides', 'fixed acidity', 'pH', 'free sulfur dioxide']
-FEATURE = ['alcohol', 'total sulfur dioxide', 'sulphates', 'volatile acidity', 'density', 'chlorides', 'citric acid', 'pH', 'fixed acidity', 'free sulfur dioxide', 'residual sugar']
-
-def subs(l):
-    if l == []:
-        return [[]]
-
-    x = subs(l[1:])
-
-    return x + [[l[0]] + y for y in x]
-
-FEATURES = subs(["fixed acidity", "volatile acidity", "citric acid", "residual sugar",
-            "chlorides", "free sulfur dioxide", "total sulfur dioxide", "density",
-            "pH", "sulphates", "alcohol"])
-
-
-FEATURES_WITH_TYPE = ["fixed acidity", "volatile acidity", "citric acid", "residual sugar",
-                      "chlorides", "free sulfur dioxide", "total sulfur dioxide", "density", "pH",
-                      "sulphates", "alcohol", "type"]
-
+RED_FEATURES = ['alcohol', 'sulphates', 'total sulfur dioxide', 'volatile acidity', 'density', 'pH', 'chlorides', 'citric acid', 'fixed acidity', 'residual sugar', 'free sulfur dioxide']
+WHITE_FEATURES = ['alcohol', 'density', 'volatile acidity', 'free sulfur dioxide', 'total sulfur dioxide', 'residual sugar', 'chlorides', 'pH', 'citric acid', 'sulphates', 'fixed acidity']
 TARGET = "quality"

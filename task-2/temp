@@ -1,0 +1,5 @@
+Features sorted by their score:
+
+[(0.1503, 'alcohol'), (0.1113, 'sulphates'), (0.1059, 'total sulfur dioxide'), (0.1028, 'volatile acidity'), (0.0883, 'density'), (0.0779, 'pH'), (0.0768, 'chlorides'), (0.0765, 'citric acid'), (0.074, 'fixed acidity'), (0.0702, 'residual sugar'), (0.066, 'free sulfur dioxide')]
+
+[(0.1131, 'alcohol'), (0.1042, 'density'), (0.1008, 'volatile acidity'), (0.0948, 'free sulfur dioxide'), (0.0933, 'total sulfur dioxide'), (0.0894, 'residual sugar'), (0.0838, 'chlorides'), (0.0824, 'pH'), (0.0815, 'citric acid'), (0.0799, 'sulphates'), (0.0767, 'fixed acidity')]
