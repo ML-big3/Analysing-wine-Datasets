@@ -66,7 +66,7 @@ class EvaluationMetrics:
         plt.ylabel('True Positive Rate')
         plt.title('Receiver operating characteristic example')
         plt.legend(loc="lower right")
-        plt.show()
+        #plt.show()
 
     def cross_validate_precision_score(self):
         scorer = make_scorer(precision_score, average="micro")
@@ -86,7 +86,14 @@ class EvaluationMetrics:
            self.classifier.fit(X_train, y_train)
            #print ("Classifier "+self.classifier_name + " Confusion Matrix ",confusion_matrix(y_test, self.classifier.predict(X_test)))
            #print (confusion_matrix(y_test, self.classifier.predict(X_test)))
-        
+
+    def cross_validate_recall(self):
+        results = model_selection.cross_val_score(self.classifier, self.X, self.y, cv=self.kfold, scoring='recall')
+        print("Classifier "+self.classifier_name+" - Recall Score: %.10f (%.10f)") % (results.mean(), results.std())
+    
+    def cross_validate_f1(self):
+        results = model_selection.cross_val_score(self.classifier, self.X, self.y, cv=self.kfold, scoring='f1')
+        print("Classifier "+self.classifier_name+" - F1 Score: %.10f (%.10f)") % (results.mean(), results.std())
 
     def perform_metrics(self):
         cross_validate_confusion_matrix()
