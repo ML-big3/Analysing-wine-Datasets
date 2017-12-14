@@ -17,6 +17,8 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import precision_score
 from sklearn.preprocessing import label_binarize
 from sklearn.metrics import f1_score
+from sklearn.model_selection import KFold
+from sklearn import cross_validation
 
 
 class EvaluationMetrics:
@@ -43,23 +45,19 @@ class EvaluationMetrics:
         print("Classifier "+self.classifier_name+" - Precision Score: %.10f (%.10f)") % (results.mean(), results.std())
     
     def cross_validate_confusion_matrix(self):
-        def tp(y_true, y_pred): return confusion_matrix(y_true, y_pred)[0, 0]
-        def tn(y_true, y_pred): return confusion_matrix(y_true, y_pred)[0, 0]
-        def fp(y_true, y_pred): return confusion_matrix(y_true, y_pred)[1, 0]
-        def fn(y_true, y_pred): return confusion_matrix(y_true, y_pred)[0, 1]
-        cm = {'tp' : make_scorer(tp), 'tn' : make_scorer(tn),
-                   'fp' : make_scorer(fp), 'fn' : make_scorer(fn)}
-        results = model_selection.cross_validate(self.classifier, self.X, self.y, cv=self.kfold, scoring=cm)
+        
+        kf = cross_validation.KFold(len(self.y), n_folds=10)
+        
+        self.y = np.array(self.y)
+        
+        for train_index, test_index in kf:
+           X_train, X_test = self.X[train_index], self.X[test_index]
+           y_train, y_test = self.y[train_index], self.y[test_index]
 
-        print("Classifier "+self.classifier_name+" - Confusion Maxtrix (test_tp): ", results['test_tp'])
-        print("Classifier "+self.classifier_name+" - Confusion Maxtrix (test_fp): ", results['test_fp'])
-        print("Classifier "+self.classifier_name+" - Confusion Maxtrix (test_tn): ", results['test_tn'])
-        print("Classifier "+self.classifier_name+" - Confusion Maxtrix (test_fn): ", results['test_fn'])
-        print("Classifier "+self.classifier_name+" - Confusion Maxtrix (train_tp): ", results['train_tp'])
-        print("Classifier "+self.classifier_name+" - Confusion Maxtrix (train_fp): ", results['train_fp'])
-        print("Classifier "+self.classifier_name+" - Confusion Maxtrix (train_tn): ", results['train_tn'])
-        print("Classifier "+self.classifier_name+" - Confusion Maxtrix (train_fn): ", results['train_fn'])
-       
+           self.classifier.fit(X_train, y_train)
+           #print ("Classifier "+self.classifier_name + " Confusion Matrix ",confusion_matrix(y_test, self.classifier.predict(X_test)))
+           print (confusion_matrix(y_test, self.classifier.predict(X_test)))
+        
 
     def perform_metrics(self):
         cross_validate_confusion_matrix()
