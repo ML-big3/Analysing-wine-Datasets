@@ -30,8 +30,10 @@ def KNN(X, y):
 
 def SVM(X, y):
     print("SVM")
-    clf = SVC()
+    clf = SVC(probability=True)
+
     get_mtrics(clf, X, y, "SVM")
+    
     # print("accuracy ", cross_val_score(clf, X, y, cv=10, scoring="accuracy").mean())
 
 
@@ -55,3 +57,7 @@ def get_mtrics(clf, X, y, name):
     metrics.cross_validate_precision_score()
     metrics.cross_validate_auc_roc()
     metrics.cross_validate_for_accuracy()
+    #metrics.cross_validate_f1()
+    metrics.cutoff_predict()
+
+    
