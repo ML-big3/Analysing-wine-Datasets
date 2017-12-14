@@ -12,3 +12,5 @@ FEATURE = ["fixed acidity", "volatile acidity", "citric acid", "residual sugar",
 RED_FEATURES = ['alcohol', 'sulphates', 'total sulfur dioxide', 'volatile acidity', 'density', 'pH', 'chlorides', 'citric acid', 'fixed acidity', 'residual sugar', 'free sulfur dioxide']
 WHITE_FEATURES = ['alcohol', 'density', 'volatile acidity', 'free sulfur dioxide', 'total sulfur dioxide', 'residual sugar', 'chlorides', 'pH', 'citric acid', 'sulphates', 'fixed acidity']
 TARGET = "quality"
+RED_WINE_CUTOFF = 0.4
+WHITE_WINE_CUTOFF = 0.5
