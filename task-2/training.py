@@ -57,7 +57,7 @@ def get_mtrics(clf, X, y, name):
     metrics.cross_validate_precision_score()
     metrics.cross_validate_auc_roc()
     metrics.cross_validate_for_accuracy()
-    #metrics.cross_validate_f1()
+    metrics.cross_validate_f1()
     metrics.cutoff_predict()
-
+    metrics.cross_validate_recall()
     

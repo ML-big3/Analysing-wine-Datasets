@@ -87,11 +87,14 @@ class EvaluationMetrics:
            #print ("Classifier "+self.classifier_name + " Confusion Matrix ",confusion_matrix(y_test, self.classifier.predict(X_test)))
            #print (confusion_matrix(y_test, self.classifier.predict(X_test)))
 
-    '''def cross_validate_f1(self):
-        results = []
-        for i in range(1,3):
-            results.append = model_selection.cross_val_score(self.classifier(n_estimators = i), self.X, self.y, cv=self.kfold, scoring='f1')
-        print("Classifier "+self.classifier_name+" - F1 Score: %.10f (%.10f)") % (results.mean(), results.std())'''
+    def cross_validate_f1(self):
+               
+        results = model_selection.cross_val_score(self.classifier, self.X, self.y, cv=self.kfold, scoring='f1_macro')
+        print("Classifier "+self.classifier_name+" - F1 Score: %.10f (%.10f)") % (results.mean(), results.std())
+
+    def cross_validate_recall(self):
+        results = model_selection.cross_val_score(self.classifier, self.X, self.y, cv=self.kfold, scoring='recall_macro')
+        print("Classifier "+self.classifier_name+" - Recall Score: %.10f (%.10f)") % (results.mean(), results.std())
   
     def cutoff_predict(self):
         results =  (self.classifier.predict_proba(self.X)[:,1] > 0.4).astype(int)
@@ -104,4 +107,4 @@ class EvaluationMetrics:
         cross_validate_for_accuracy()
         cutoff_predict()
         cross_validate_f1()
-        
+        cross_validate_recall()
