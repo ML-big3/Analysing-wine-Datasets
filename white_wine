@@ -1,111 +1,99 @@
 1
-['alcohol']
 SVM
-('accuracy ', 0.75908291231227665)
+Classifier SVM - F1 Score: 0.7580689454 (0.0315884904)
 KNN
-('accuracy ', 0.75235193373889742)
+Classifier KNN - F1 Score: 0.7488794291 (0.0340466906)
 logistic_regression
-('accuracy ', 0.75991091089891405)
+Classifier logistic_regression - F1 Score: 0.7597086933 (0.0339720218)
 decision_tree
-('accuracy ', 0.75438360247826353)
+Classifier decision_tree - F1 Score: 0.7550135637 (0.0380706303)
 2
-['alcohol', 'density']
 SVM
-('accuracy ', 0.75990382963626135)
+Classifier SVM - F1 Score: 0.7580689454 (0.0315884904)
 KNN
-('accuracy ', 0.75254435181542034)
+Classifier KNN - F1 Score: 0.7413254873 (0.0305388033)
 logistic_regression
-('accuracy ', 0.7594919102672868)
+Classifier logistic_regression - F1 Score: 0.7588852719 (0.0324134455)
 decision_tree
-('accuracy ', 0.66167521883617564)
+Classifier decision_tree - F1 Score: 0.6721113476 (0.0341615263)
 3
-['alcohol', 'density', 'volatile acidity']
 SVM
-('accuracy ', 0.75806875412191788)
+Classifier SVM - F1 Score: 0.7586849464 (0.0333692527)
 KNN
-('accuracy ', 0.75295669702914214)
+Classifier KNN - F1 Score: 0.7484729352 (0.0341315483)
 logistic_regression
-('accuracy ', 0.7556222632993822)
+Classifier logistic_regression - F1 Score: 0.7558261341 (0.0351012978)
 decision_tree
-('accuracy ', 0.66231371906027536)
+Classifier decision_tree - F1 Score: 0.6582129293 (0.0401750424)
 4
-['alcohol', 'density', 'volatile acidity', 'free sulfur dioxide']
 SVM
-('accuracy ', 0.75806041572477212)
+Classifier SVM - F1 Score: 0.7566449647 (0.0418810487)
 KNN
-('accuracy ', 0.75091378547845611)
+Classifier KNN - F1 Score: 0.7364308668 (0.0427689043)
 logistic_regression
-('accuracy ', 0.75950357722337514)
+Classifier logistic_regression - F1 Score: 0.7590926923 (0.0331350188)
 decision_tree
-('accuracy ', 0.67353366906219214)
+Classifier decision_tree - F1 Score: 0.6764016527 (0.0315619375)
 5
-['alcohol', 'density', 'volatile acidity', 'free sulfur dioxide', 'total sulfur dioxide']
 SVM
-('accuracy ', 0.73252888285622997)
+Classifier SVM - F1 Score: 0.7305016485 (0.0317654262)
 KNN
-('accuracy ', 0.74274507938944567)
+Classifier KNN - F1 Score: 0.7337723801 (0.0381100271)
 logistic_regression
-('accuracy ', 0.75786674901365103)
+Classifier logistic_regression - F1 Score: 0.7615420892 (0.0353029578)
 decision_tree
-('accuracy ', 0.67841081540259207)
+Classifier decision_tree - F1 Score: 0.6845695088 (0.0418134034)
 6
-['alcohol', 'density', 'volatile acidity', 'free sulfur dioxide', 'total sulfur dioxide', 'residual sugar']
 SVM
-('accuracy ', 0.73233730626932714)
+Classifier SVM - F1 Score: 0.7319348107 (0.0312436489)
 KNN
-('accuracy ', 0.73804660594511573)
+Classifier KNN - F1 Score: 0.7292821669 (0.0362349379)
 logistic_regression
-('accuracy ', 0.75970182622797355)
+Classifier logistic_regression - F1 Score: 0.7605208464 (0.0342300624)
 decision_tree
-('accuracy ', 0.69108808432847979)
+Classifier decision_tree - F1 Score: 0.6821188598 (0.0331848175)
 7
-['alcohol', 'density', 'volatile acidity', 'free sulfur dioxide', 'total sulfur dioxide', 'residual sugar', 'chlorides']
 SVM
-('accuracy ', 0.73355971784088037)
+Classifier SVM - F1 Score: 0.7321359710 (0.0303455647)
 KNN
-('accuracy ', 0.73804660594511573)
+Classifier KNN - F1 Score: 0.7292821669 (0.0362349379)
 logistic_regression
-('accuracy ', 0.76051982213799396)
+Classifier logistic_regression - F1 Score: 0.7605212637 (0.0349620654)
 decision_tree
-('accuracy ', 0.68370864025392242)
+Classifier decision_tree - F1 Score: 0.6774220608 (0.0277572159)
 8
-['alcohol', 'density', 'volatile acidity', 'free sulfur dioxide', 'total sulfur dioxide', 'residual sugar', 'chlorides', 'pH']
 SVM
-('accuracy ', 0.73254221919172635)
+Classifier SVM - F1 Score: 0.7311159801 (0.0327829908)
 KNN
-('accuracy ', 0.73743352635745241)
+Classifier KNN - F1 Score: 0.7298944118 (0.0357373286)
 logistic_regression
-('accuracy ', 0.76031615785019302)
+Classifier logistic_regression - F1 Score: 0.7619502525 (0.0330923322)
 decision_tree
-('accuracy ', 0.67718801028589304)
+Classifier decision_tree - F1 Score: 0.6768081466 (0.0348013152)
 9
-['alcohol', 'density', 'volatile acidity', 'free sulfur dioxide', 'total sulfur dioxide', 'residual sugar', 'chlorides', 'pH', 'citric acid']
 SVM
-('accuracy ', 0.73417653993238008)
+Classifier SVM - F1 Score: 0.7321359710 (0.0343865009)
 KNN
-('accuracy ', 0.73743352635745241)
+Classifier KNN - F1 Score: 0.7298939944 (0.0354474387)
 logistic_regression
-('accuracy ', 0.76051732146883966)
+Classifier logistic_regression - F1 Score: 0.7641968198 (0.0323374661)
 decision_tree
-('accuracy ', 0.68108805372885717)
+Classifier decision_tree - F1 Score: 0.6872179792 (0.0296033873)
 10
-['alcohol', 'density', 'volatile acidity', 'free sulfur dioxide', 'total sulfur dioxide', 'residual sugar', 'chlorides', 'pH', 'citric acid', 'sulphates']
 SVM
-('accuracy ', 0.73376628994281357)
+Classifier SVM - F1 Score: 0.7302992363 (0.0351791173)
 KNN
-('accuracy ', 0.73743352635745241)
+Classifier KNN - F1 Score: 0.7305066567 (0.0359940272)
 logistic_regression
-('accuracy ', 0.7621487292954241)
+Classifier logistic_regression - F1 Score: 0.7641938984 (0.0340617092)
 decision_tree
-('accuracy ', 0.67517425167560552)
+Classifier decision_tree - F1 Score: 0.6841513292 (0.0302923654)
 11
-['alcohol', 'density', 'volatile acidity', 'free sulfur dioxide', 'total sulfur dioxide', 'residual sugar', 'chlorides', 'pH', 'citric acid', 'sulphates', 'fixed acidity']
 SVM
-('accuracy ', 0.73335354438403)
+Classifier SVM - F1 Score: 0.7302984016 (0.0343950000)
 KNN
-('accuracy ', 0.73967718248195413)
+Classifier KNN - F1 Score: 0.7317332332 (0.0339616103)
 logistic_regression
-('accuracy ', 0.76153815037691519)
+Classifier logistic_regression - F1 Score: 0.7623550770 (0.0340459396)
 decision_tree
-('accuracy ', 0.67680941900581648)
-[Finished in 103.9s]
+Classifier decision_tree - F1 Score: 0.6774120446 (0.0364402591)

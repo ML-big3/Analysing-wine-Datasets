@@ -1,122 +1,100 @@
 1
 SVM
-('accuracy ', 0.82179462514852974)
-SVM
-('accuracy ', 0.82179462514852974)
+Classifier SVM - F1 Score: 0.8230227987 (0.0797303038)
 KNN
-('accuracy ', 0.80300113922319949)
-LogisticRegression
-('accuracy ', 0.82368146735854497)
-Decision Tree
-('DecisionT  ', 0.80425138708197164)
+Classifier KNN - F1 Score: 0.8030070755 (0.0722940502)
+logistic_regression
+Classifier logistic_regression - F1 Score: 0.8242806604 (0.0785533947)
+decision_tree
+Classifier decision_tree - F1 Score: 0.8005149371 (0.0856399240)
 2
 SVM
-('accuracy ', 0.82491210717784169)
-SVM
-('accuracy ', 0.82491210717784169)
+Classifier SVM - F1 Score: 0.8273977987 (0.0809586313)
 KNN
-('accuracy ', 0.81926317768049672)
-LogisticRegression
-('accuracy ', 0.82303297918579688)
-Decision Tree
-('DecisionT  ', 0.73855739982673374)
+Classifier KNN - F1 Score: 0.8261438679 (0.0631637954)
+logistic_regression
+Classifier logistic_regression - F1 Score: 0.8230306604 (0.0770253203)
+decision_tree
+Classifier decision_tree - F1 Score: 0.7348427673 (0.0550301555)
 3
 SVM
-('accuracy ', 0.82803700859062457)
-SVM
-('accuracy ', 0.82803700859062457)
+Classifier SVM - F1 Score: 0.8298977987 (0.0686713076)
 KNN
-('accuracy ', 0.82239215732813931)
-LogisticRegression
-('accuracy ', 0.82865812567589425)
-Decision Tree
-('DecisionT  ', 0.73859690888587903)
+Classifier KNN - F1 Score: 0.8242688679 (0.0758944674)
+logistic_regression
+Classifier logistic_regression - F1 Score: 0.8273977987 (0.0787078457)
+decision_tree
+Classifier decision_tree - F1 Score: 0.7535927673 (0.0596460539)
 4
 SVM
-('accuracy ', 0.82553700859062429)
-SVM
-('accuracy ', 0.82553700859062429)
+Classifier SVM - F1 Score: 0.8299017296 (0.0705151365)
 KNN
-('accuracy ', 0.82051715732813923)
-LogisticRegression
-('accuracy ', 0.83303312567589427)
-Decision Tree
-('DecisionT  ', 0.75099455001209015)
+Classifier KNN - F1 Score: 0.8230227987 (0.0766834979)
+logistic_regression
+Classifier logistic_regression - F1 Score: 0.8317727987 (0.0678529466)
+decision_tree
+Classifier decision_tree - F1 Score: 0.7604363208 (0.0604035461)
 5
 SVM
-('accuracy ', 0.82429482139581189)
-SVM
-('accuracy ', 0.82429482139581189)
+Classifier SVM - F1 Score: 0.8299017296 (0.0678616016)
 KNN
-('accuracy ', 0.82051715732813923)
-LogisticRegression
-('accuracy ', 0.83178700766347191)
-Decision Tree
-('DecisionT  ', 0.75489501203073106)
+Classifier KNN - F1 Score: 0.8230227987 (0.0766834979)
+logistic_regression
+Classifier logistic_regression - F1 Score: 0.8298938679 (0.0683956215)
+decision_tree
+Classifier decision_tree - F1 Score: 0.7467413522 (0.0618643071)
 6
 SVM
-('accuracy ', 0.82680666360582722)
-SVM
-('accuracy ', 0.82680666360582722)
+Classifier SVM - F1 Score: 0.8311556604 (0.0740859627)
 KNN
-('accuracy ', 0.82051715732813923)
-LogisticRegression
-('accuracy ', 0.83304884987348693)
-Decision Tree
-('DecisionT  ', 0.73354197139079313)
+Classifier KNN - F1 Score: 0.8217649371 (0.0747483228)
+logistic_regression
+Classifier logistic_regression - F1 Score: 0.8286438679 (0.0654995856)
+decision_tree
+Classifier decision_tree - F1 Score: 0.7435966981 (0.0585993086)
 7
 SVM
-('accuracy ', 0.82743166360582721)
-SVM
-('accuracy ', 0.82743166360582721)
+Classifier SVM - F1 Score: 0.8317806604 (0.0733688518)
 KNN
-('accuracy ', 0.82177487154610973)
-LogisticRegression
-('accuracy ', 0.83178700766347169)
-Decision Tree
-('DecisionT  ', 0.74979260803551961)
+Classifier KNN - F1 Score: 0.8217649371 (0.0747483228)
+logistic_regression
+Classifier logistic_regression - F1 Score: 0.8305188679 (0.0636424335)
+decision_tree
+Classifier decision_tree - F1 Score: 0.7455070755 (0.0640463182)
 8
 SVM
-('accuracy ', 0.82743166360582721)
-SVM
-('accuracy ', 0.82743166360582721)
+Classifier SVM - F1 Score: 0.8317806604 (0.0736876069)
 KNN
-('accuracy ', 0.82113812792331198)
-LogisticRegression
-('accuracy ', 0.83181044607903476)
-Decision Tree
-('DecisionT  ', 0.75418387399923159)
+Classifier KNN - F1 Score: 0.8248938679 (0.0724484280)
+logistic_regression
+Classifier logistic_regression - F1 Score: 0.8280188679 (0.0659769177)
+decision_tree
+Classifier decision_tree - F1 Score: 0.7404913522 (0.0667707601)
 9
 SVM
-('accuracy ', 0.82367375314057456)
-SVM
-('accuracy ', 0.82367375314057456)
+Classifier SVM - F1 Score: 0.8292806604 (0.0692911734)
 KNN
-('accuracy ', 0.8217751663806091)
-LogisticRegression
-('accuracy ', 0.82929472280859462)
-Decision Tree
-('DecisionT  ', 0.74543313691298263)
+Classifier KNN - F1 Score: 0.8273977987 (0.0733117486)
+logistic_regression
+Classifier logistic_regression - F1 Score: 0.8298938679 (0.0619840588)
+decision_tree
+Classifier decision_tree - F1 Score: 0.7567334906 (0.0689665037)
 10
 SVM
-('accuracy ', 0.82677511662342429)
-SVM
-('accuracy ', 0.82677511662342429)
+Classifier SVM - F1 Score: 0.8217806604 (0.0754456037)
 KNN
-('accuracy ', 0.82179467397856221)
-LogisticRegression
-('accuracy ', 0.82929477163862708)
-Decision Tree
-('DecisionT  ', 0.74355455068705711)
+Classifier KNN - F1 Score: 0.8205227987 (0.0758607134)
+logistic_regression
+Classifier logistic_regression - F1 Score: 0.8336438679 (0.0573013485)
+decision_tree
+Classifier decision_tree - F1 Score: 0.7554756289 (0.0574328963)
 11
 SVM
-('accuracy ', 0.82115385119375206)
-SVM
-('accuracy ', 0.82115385119375206)
+Classifier SVM - F1 Score: 0.8261399371 (0.0729859348)
 KNN
-('accuracy ', 0.82427904836818688)
-LogisticRegression
-('accuracy ', 0.82988454077023377)
-Decision Tree
-('DecisionT  ', 0.75412033778267651)
-[Finished in 18.3s]
+Classifier KNN - F1 Score: 0.8236477987 (0.0748149950)
+logistic_regression
+Classifier logistic_regression - F1 Score: 0.8317688679 (0.0592584354)
+decision_tree
+Classifier decision_tree - F1 Score: 0.7417177673 (0.0533818377)
+[Finished in 32.2s]

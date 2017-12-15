@@ -23,7 +23,7 @@ def feature_selection(X, y):
 
 def KNN(X, y):
     print("KNN")
-    clf = KNeighborsClassifier(26, weights="uniform")
+    clf = KNeighborsClassifier(17, weights="uniform")
     # print("accuracy ", cross_val_score(clf, X, y, cv=10, scoring="accuracy").mean())
     get_mtrics(clf, X, y, "KNN")
 
