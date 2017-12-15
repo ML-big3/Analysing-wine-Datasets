@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-Created on Mon Oct 23 23:09:37 2017
+EVALUATION.PY
 
 Evaluation Metrics
 """

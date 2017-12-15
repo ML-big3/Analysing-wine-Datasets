@@ -1,3 +1,10 @@
+"""
+TRAINING.PY
+
+Evaluation Metrics
+"""
+
+
 import evaluation
 from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier

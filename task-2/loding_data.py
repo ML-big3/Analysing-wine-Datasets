@@ -1,3 +1,10 @@
+"""
+LODING_DATA
+
+Data preprocessing
+"""
+
+
 import config
 import training
 import pandas as pd
@@ -62,5 +69,5 @@ def start_training(dataset):
 
 # g_features()
 # feature_selection()
-# train_red_wine_dataset()
-# train_white_wine_dataset()
+train_red_wine_dataset()
+train_white_wine_dataset()
